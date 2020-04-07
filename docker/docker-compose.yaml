@@ -5,11 +5,22 @@ services:
     restart: always
     depends_on:
       - redis
-    ports:
-      - "8080:8080"
+  webapp2:
+    build: ./webapp
+    restart: always
+    depends_on:
+      - redis
   redis:
     image: redis
     command: ["redis-server", "--appendonly", "yes", "--requirepass", "hiredis"]
     container_name: redis-master
     ports:
       - "6379:6379"
+  nginx:
+    build: ./nginx
+    restart: always
+    depends_on:
+      - webapp
+      - webapp2
+    ports:
+      - "80:80"

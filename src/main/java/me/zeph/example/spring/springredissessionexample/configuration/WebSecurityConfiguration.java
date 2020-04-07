@@ -1,4 +1,4 @@
-package me.zeph.example.spring.springredissessionexample;
+package me.zeph.example.spring.springredissessionexample.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

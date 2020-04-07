@@ -1,4 +1,4 @@
-package me.zeph.example.spring.springredissessionexample;
+package me.zeph.example.spring.springredissessionexample.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;

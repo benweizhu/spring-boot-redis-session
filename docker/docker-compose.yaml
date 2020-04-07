@@ -14,8 +14,6 @@ services:
     image: redis
     command: ["redis-server", "--appendonly", "yes", "--requirepass", "hiredis"]
     container_name: redis-master
-    ports:
-      - "6379:6379"
   nginx:
     build: ./nginx
     restart: always

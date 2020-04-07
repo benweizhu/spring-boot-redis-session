@@ -8,4 +8,6 @@ Nginx Reverse proxy
 
 Docker
 
+Redis
+
 docker-compose
